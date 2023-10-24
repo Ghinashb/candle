@@ -1,0 +1,211 @@
+.section-image {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url('../asset/candle.jpg');
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay {
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h1 {
+  font-size: 2.5rem;
+  font-family: 'Papyrus';
+  margin-bottom: 1rem;
+}
+
+.text-overlay p {
+  font-size: 1.5rem;
+}
+
+.slider-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider-image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.slider-image.active {
+  transform: translateX(0);
+}
+
+.slider-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  margin-right: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image {
+  position: relative;
+  transition: transform 0.2s;
+  width: 100%; 
+  max-width: 250px;
+  margin: 10px; 
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagram-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.image:hover .instagram-icon {
+  opacity: 1;
+}
+
+.about-us-container {
+  background-color: #f2ebe7; 
+  color: #333; 
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.about-us-container h1 {
+  color: rgba(165, 42, 42, 0.801); 
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-text {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.about-us-image {
+  flex: 1;
+  background-image: url('../asset/candle.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  height: auto;
+}
+.our-candles {
+  background-color: #f2ebe7; 
+  color: #333; 
+  padding: 40px 0;
+  text-align: center;
+}
+
+.our-candles h2 {
+  color: rgba(165, 42, 42, 0.801); 
+  text-align: left; 
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 5px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px; 
+  margin: 0 auto;
+}
+
+.image {
+  position: relative;
+  transition: transform 0.2s;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #fff;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.instagram-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.image:hover .instagram-icon {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    justify-content: space-between;
+  }
+}
