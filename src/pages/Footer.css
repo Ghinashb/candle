@@ -1,0 +1,30 @@
+.footer {
+    background-color: #f2dacc; 
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-namelogo  {
+    color: rgba(165, 42, 42, 0.801); 
+    font-family:'Lucida Handwriting';
+  }
+  
+  .social-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+    font-size: small;
+  }
+  
